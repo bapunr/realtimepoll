@@ -1,0 +1,56 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-realtimepoll-dev-141201-authRole",
+			"UnauthRoleArn": "arn:aws:iam::524107712104:role/amplify-realtimepoll-dev-141201-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::524107712104:role/amplify-realtimepoll-dev-141201-authRole",
+			"Region": "ap-south-1",
+			"DeploymentBucketName": "amplify-realtimepoll-dev-141201-deployment",
+			"UnauthRoleName": "amplify-realtimepoll-dev-141201-unauthRole",
+			"StackName": "amplify-realtimepoll-dev-141201",
+			"StackId": "arn:aws:cloudformation:ap-south-1:524107712104:stack/amplify-realtimepoll-dev-141201/a6e0f730-c8d2-11ea-abac-028f38a10716",
+			"AmplifyAppId": "d4mso8f8l2fb4"
+		}
+	},
+	"api": {
+		"ConferenceAPI": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "",
+							"apiKeyExpirationDays": 7
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "57vrnys6pfhftfjcgiu2gf3lmi",
+				"GraphQLAPIEndpointOutput": "https://6exgbqra55hbbayzndj6mciesa.appsync-api.ap-south-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-rqvl26f7cjhnfnfuwd5isfnpwu"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-realtimepoll-dev-141201-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiConferenceAPI"
+			},
+			"lastPushTimeStamp": "2020-07-18T13:09:23.482Z",
+			"lastPushDirHash": "OUDLrprIZMuEBNHHZ18EJVK92gQ="
+		}
+	},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
+			"providerPlugin": "awscloudformation",
+			"type": "manual",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-realtimepoll-dev-141201-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+				"logicalId": "hostingamplifyhosting"
+			},
+			"lastPushTimeStamp": "2020-07-18T13:09:23.492Z",
+			"output": {},
+			"lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
+		}
+	}
+}
